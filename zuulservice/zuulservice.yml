@@ -4,6 +4,9 @@ zuul.routes.organizationservice: /organization/**
 zuul.routes.licensingservice: /licensing/**
 zuul.routes.assetsservice: /assets/**
 zuul.routes.authenticationservice: /auth/**
+zuul.routes.assetstatic.path: /assetstatic/**
+zuul.routes.assetstatic.url:  http://assetservice-static:8081
+zuul.routes.assetstatic.ribbon.listOfServers: http://assetservice-static1:8081, http://assetservice-static2:8082
 #zuul.routes.licensestatic.path: /licensestatic/**
 #zuul.routes.licensestatic.url:  http://licenseservice-static:8081
 #zuul.routes.licensestatic.serviceId: licensestatic
